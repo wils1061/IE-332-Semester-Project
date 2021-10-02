@@ -7,7 +7,16 @@ if (!("dplyr" %in% installed.packages())) {
 library(rvest)
 library(dplyr)
 
+#Example URL: https://fantasydata.com/nhl/fantasy-hockey-leaders?scope=1&season=2020&seasontype=2&conference=1&date=09-30-2021
 #https://towardsdatascience.com/tidy-web-scraping-in-r-tutorial-and-resources-ac9f72b4fe47
+
+#
+data_scrape <- function(draftSeason, draftDate = Sys.Date(), draftTeam)
+{
+  
+}
+
+
 
 #Base example of a website URL for FantasyData.com
 #https://fantasydata.com/nhl/fantasy-hockey-leaders?scope=1&season=2022&seasontype=2&conference=1&date=09-30-2021
