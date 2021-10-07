@@ -61,12 +61,10 @@ scrapeSkaters <- function(S) {
   return(ds.skaters[,c(2:11,29,15:16,20,24)])   
   #ds.skaters
 }
+
+#runs web scraping code and filters by the team selected for the draft
 teamPlayerSelection <- function(draftTeam, draftSeason, draftDate = Sys.Date())
 {
   webData <- scrapeSkaters(S = draftSeason)
   teamData <- webData[webData$tm == draftTeam,]
 }
-
-
-#Base example of a website URL for FantasyData.com
-#https://fantasydata.com/nhl/fantasy-hockey-leaders?scope=1&season=2022&seasontype=2&conference=1&date=09-30-2021'
